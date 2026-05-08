@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tribunal de Ley Natural Universal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">TRIBUNAL DE LEY NATURAL</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="active">Home</a></li>
+                    <li><a href="#mision-vision">Visión y Misión</a></li>
+                    <li><a href="#manifiesto">Manifiesto</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-text" data-aos="fade-up">
+            <h1>Tribunal de Ley Natural Universal</h1>
+            <p>La ley natural son el conjunto de preceptos y normas que se encuentra escrita en leyes universales y memorizado en los espíritus de los hombres. [cite: 1]</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="mision-vision" class="content-block" data-aos="fade-right">
+            <h2>Nuestra Misión y Visión</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Misión</h3>
+                    <p>Aplicación de leyes naturales y derechos inalienables, para la protección de todos los seres vivos. [cite: 2]</p>
+                </div>
+                <div class="card">
+                    <h3>Visión</h3>
+                    <p>La restauración del orden universal de las leyes naturales y el respeto de los principios y valores éticos. [cite: 3]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="manifiesto" class="content-block" data-aos="fade-left">
+            <h2>El Tribunal y su Labor</h2>
+            <p>El Gobierno de CHILE es una corporación privada, ilegal desde el 2013 e ilegítima y es una rama de otra corporación llamada Estados Unidos de América, registrada como REPUBLIC OF CHILE... excluida de jure. </p>
+            <p>En consecuencia, el Tribunal de Ley Natural Universal está situado para proteger al hombre / mujer natural, sobre quien el derecho positivo no tiene jurisdicción, contra la injusticia y el abuso de poder de organismos que actúan de facto pero que se encuentran nulos, sin valor en sus actos constitutivos y sus formas jurídicas. [cite: 18]</p>
+            <p>El Tribunal de Ley Natural Universal es autónomo con poder absoluto. [cite: 22] Tribunal Ley Natural Chile esta presente para velar por los derechos naturales de cada hombre y mujer vivo(a) libre y soberano. </p>
+        </section>
+
+        <section id="servicios" class="content-block" data-aos="fade-up">
+            <h2>Transparencia y Servicios</h2>
+            <div class="card" style="border-left: 4px solid #c5a059;">
+                <p><strong>¡IMPORTANTE!</strong> Todos los SERVICIOS ofrecidos por los miembros del Tribunal de Ley Natural son ABSOLUTAMENTE gratuitos y pueden recibir SOLO donaciones voluntarias.  Si ocurre lo contrario, tenga en cuenta que los interesados ​​no actúan en representación de la Institución sino a título estrictamente personal. [cite: 5]</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200 });
+        
+        // Script para activar menú según el scroll
+        window.addEventListener('scroll', () => {
+            let sections = document.querySelectorAll('section');
+            let navLinks = document.querySelectorAll('.nav-links a');
+            
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('.nav-links a[href*=' + id + ']').classList.add('active');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
