@@ -104,10 +104,54 @@
     @keyframes animStar {
       from { transform: translateY(0px); }
       to { transform: translateY(-2000px); }
-    }
+    }.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.9); /* Un color oscuro un poco transparente */
+    color: white;
+    padding: 10px 5%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Un número alto para que flote sobre las estrellas */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
   </style>
 </head>
-<body>
+<body><nav class="navbar">
+    <div class="logo">
+        <h1>VideoCam Chile</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+
+
+
+
     <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
