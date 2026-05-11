@@ -5,107 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoCam Chile - En Construcción</title>
     <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            color: #ff3366;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #cccccc;
-        }
-        /* --- Fondo de Espacio Animado --- */
-body {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  overflow-x: hidden;
-  margin: 0;
-}
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-#stars, #stars2, #stars3 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  z-index: -1;
-}
-/* --- Posición de las Estrellas (Los puntitos) --- */
-#stars {
-  box-shadow: 446px 61px #FFF, 241px 813px #FFF, 1500px 300px #FFF, 1200px 800px #FFF, 100px 500px #FFF, 900px 100px #FFF, 1800px 400px #FFF;
-  animation: animStar 50s linear infinite;
-}
+    h1 { color: #ff3366; z-index: 10; }
+    p { font-size: 1.2rem; color: #cccccc; z-index: 10; }
 
-#stars2 {
-  width: 2px;
-  height: 2px;
-  box-shadow: 100px 200px #FFF, 400px 500px #FFF, 800px 100px #FFF, 1200px 600px #FFF, 1500px 900px #FFF;
-  animation: animStar 100s linear infinite;
-}
+    #stars, #stars2, #stars3 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      z-index: -1;
+    }
 
-#stars3 {
-  width: 3px;
-  height: 3px;
-  box-shadow: 300px 400px #FFF, 700px 100px #FFF, 1100px 800px #FFF;
-  animation: animStar 150s linear infinite;
-}
+    #stars {
+      box-shadow: 197px 105px #FFF, 1133px 860px #FFF, 217px 119px #FFF, 180px 156px #FFF, 701px 182px #FFF, 538px 187px #FFF, 1438px 317px #FFF, 191px 640px #FFF, 1184px 945px #FFF, 112px 318px #FFF, 522px 475px #FFF, 581px 716px #FFF, 1007px 119px #FFF, 47px 251px #FFF, 63px 824px #FFF, 1711px 101px #FFF, 871px 112px #FFF, 1900px 500px #FFF;
+      animation: animStar 50s linear infinite;
+    }
 
-/* --- Animación del Movimiento --- */
-@keyframes animStar {
-  from { transform: translateY(0px); }
-  to { transform: translateY(-2000px); }
-}
+    #stars2 {
+      width: 2px;
+      height: 2px;
+      box-shadow: 100px 200px #FFF, 400px 500px #FFF, 800px 100px #FFF, 1200px 600px #FFF, 1500px 900px #FFF, 250px 750px #FFF;
+      animation: animStar 100s linear infinite;
+    }
 
-/* Capa 1: Estrellas pequeñas (muchas) */
-#stars {width: 1px;
-  height: 1px;
-  box-shadow: 446px 61px #FFF, 241px 813px #FFF, 1500px 300px #FFF, 1200px 800px #FFF, 100px 500px #FFF, 900px 100px #FFF;
-  animation: animStar 50s linear infinite;
-}
-  width: 1px;
-  height: 1px;
-  box-shadow: 446px 61px #FFF, 241px 813px #FFF, 1500px 300px #FFF, 1200px 800px #FFF, 100px 500px #FFF, 900px 100px #FFF;
-  animation: animStar 50s linear infinite;
-}
-  width: 1px;
-  height: 1px;
-  box-shadow: 197px 105px #FFF, 1133px 860px #FFF, 217px 119px #FFF, 180px 156px #FFF, 701px 182px #FFF, 538px 187px #FFF, 1438px 317px #FFF, 191px 640px #FFF, 1184px 945px #FFF, 112px 318px #FFF, 522px 475px #FFF, 581px 716px #FFF, 1007px 119px #FFF, 47px 251px #FFF, 63px 824px #FFF, 1711px 101px #FFF, 871px 112px #FFF, 1900px 500px #FFF, 300px 150px #FFF, 1200px 200px #FFF, 800px 180px #FFF, 150px 700px #FFF, 1600px 400px #FFF, 500px 100px #FFF, 1900px 190px #FFF, 200px 200px #FFF, 1000px 100px #FFF, 450px 850px #FFF, 1300px 150px #FFF, 600px 1100px #FFF;
-  animation: animStar 50s linear infinite;
-}
+    #stars3 {
+      width: 3px;
+      height: 3px;
+      box-shadow: 300px 400px #FFF, 700px 100px #FFF, 1100px 800px #FFF, 1500px 200px #FFF;
+      animation: animStar 150s linear infinite;
+    }
 
-/* Capa 2: Estrellas medianas */
-#stars2 {
-  width: 2px;
-  height: 2px;
-  box-shadow: 100px 200px #FFF, 400px 500px #FFF, 800px 100px #FFF, 1200px 600px #FFF, 1500px 900px #FFF, 250px 750px #FFF, 1100px 1100px #FFF, 50px 400px #FFF, 1700px 200px #FFF, 900px 800px #FFF, 1400px 300px #FFF, 600px 600px #FFF, 300px 1200px #FFF;
-  animation: animStar 100s linear infinite;
-}
+    @keyframes animStar {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-2000px); }
+    }
+  </style>
+</head><style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-/* Capa 3: Estrellas grandes y brillantes */
-#stars3 {
-  width: 3px;
-  height: 3px;
-  box-shadow: 300px 400px #FFF, 700px 100px #FFF, 1100px 800px #FFF, 1500px 200px #FFF, 200px 1100px #FFF, 1800px 900px #FFF, 500px 500px #FFF, 1000px 1400px #FFF;
-  animation: animStar 150s linear infinite;
-}
+    h1 { color: #ff3366; z-index: 10; }
+    p { font-size: 1.2rem; color: #cccccc; z-index: 10; }
 
-@keyframes animStar {
-  from { transform: translateY(0px); }
-  to { transform: translateY(-2000px); }
-}
+    #stars, #stars2, #stars3 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      z-index: -1;
+    }
 
+    #stars {
+      box-shadow: 197px 105px #FFF, 1133px 860px #FFF, 217px 119px #FFF, 180px 156px #FFF, 701px 182px #FFF, 538px 187px #FFF, 1438px 317px #FFF, 191px 640px #FFF, 1184px 945px #FFF, 112px 318px #FFF, 522px 475px #FFF, 581px 716px #FFF, 1007px 119px #FFF, 47px 251px #FFF, 63px 824px #FFF, 1711px 101px #FFF, 871px 112px #FFF, 1900px 500px #FFF;
+      animation: animStar 50s linear infinite;
+    }
 
+    #stars2 {
+      width: 2px;
+      height: 2px;
+      box-shadow: 100px 200px #FFF, 400px 500px #FFF, 800px 100px #FFF, 1200px 600px #FFF, 1500px 900px #FFF, 250px 750px #FFF;
+      animation: animStar 100s linear infinite;
+    }
 
-    </style>
+    #stars3 {
+      width: 3px;
+      height: 3px;
+      box-shadow: 300px 400px #FFF, 700px 100px #FFF, 1100px 800px #FFF, 1500px 200px #FFF;
+      animation: animStar 150s linear infinite;
+    }
+
+    @keyframes animStar {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-2000px); }
+    }
+  </style>
 </head>
 <body>
     <div id="stars"></div>
