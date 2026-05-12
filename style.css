@@ -52,8 +52,36 @@
 47      from { transform: translateY(0px); }
 48      to { transform: translateY(-2000px); }
 49  }
-50
-51  /* Arreglo del Menú */
-52  .navbar {
-53      display: flex;
-        ... (todo el resto del código que te pasé)
+50/* Arreglo Profesional del Menú */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    width: 100%;
+    position: fixed; /* Se queda arriba al bajar */
+    top: 0;
+    left: 0;
+    background: rgba(15, 23, 42, 0.8); /* Fondo sutil para que no se pierda */
+    backdrop-filter: blur(10px);      /* Efecto cristal */
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; /* Quita los puntos de la lista */
+    gap: 30px;        /* Espacio entre botones */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff3366; /* Color fucsia al pasar el mouse */
+}
