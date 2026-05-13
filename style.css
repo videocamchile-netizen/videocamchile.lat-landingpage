@@ -47,12 +47,8 @@
       from { transform: translateY(0px); }
       to { transform: translateY(-2000px); }
     }
-
-    46  @keyframes animStar {
-47      from { transform: translateY(0px); }
-48      to { transform: translateY(-2000px); }
-49  }
-50/* Arreglo Profesional del Menú */
+   
+    /* Arreglo Profesional del Menú */
 .navbar {
     display: flex;
     justify-content: space-between;
